@@ -1,0 +1,25 @@
+{
+    "name": "frizzy-node-red-rpi",
+    "version": "1.0.0",
+    "description": "A visual tool for wiring the Internet of Things",
+    "homepage": "http://nodered.org",
+    "repository": {
+	"type": "git",
+        "url": "https://github.com/frizzy/docker-node-red-rpi.git"
+    },
+    "license": "Apache-2.0",
+    "main": "node_modules/node-red/red/red.js",
+    "scripts": {
+        "start": "node $NODE_OPTIONS node_modules/node-red/red.js -v $FLOWS"
+    },
+    "dependencies": {
+        "node-red": "0.20.5",
+        "node-red-node-msgpack": "*",
+        "node-red-node-base64": "*",
+        "node-red-node-suncalc": "*",
+        "node-red-node-random": "*"
+    },
+    "engines": {
+        "node": "10.*.*"
+    }
+}
