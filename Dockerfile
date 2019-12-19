@@ -1,4 +1,4 @@
-FROM arm32v7/node:10-stretch-slim
+FROM arm32v7/node:10-buster-slim
 
 RUN apt-get update \
     && apt-get install -y \
